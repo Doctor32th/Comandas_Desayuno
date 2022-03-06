@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PedidosJ" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="52e4fe3f-4474-48a9-bc5d-c58e84b5ee3a">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CRUDAdapter"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pedidos]]>
+	</queryString>
+	<field name="idPedido" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idPedido"/>
+		<property name="com.jaspersoft.studio.field.label" value="idPedido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pedidos"/>
+	</field>
+	<field name="productos_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="productos_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="productos_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pedidos"/>
+	</field>
+	<field name="precioPedido" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="precioPedido"/>
+		<property name="com.jaspersoft.studio.field.label" value="precioPedido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pedidos"/>
+	</field>
+	<field name="estadoPedido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estadoPedido"/>
+		<property name="com.jaspersoft.studio.field.label" value="estadoPedido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pedidos"/>
+	</field>
+	<field name="fechaPedido" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fechaPedido"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechaPedido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pedidos"/>
+	</field>
+	<group name="idPedido">
+		<groupExpression><![CDATA[$F{idPedido}]]></groupExpression>
+	</group>
+	<group name="productos_id">
+		<groupExpression><![CDATA[$F{productos_id}]]></groupExpression>
+	</group>
+	<group name="precioPedido">
+		<groupExpression><![CDATA[$F{precioPedido}]]></groupExpression>
+	</group>
+	<group name="estadoPedido">
+		<groupExpression><![CDATA[$F{estadoPedido}]]></groupExpression>
+	</group>
+	<group name="fechaPedido">
+		<groupExpression><![CDATA[$F{fechaPedido}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="10" width="90" height="70" uuid="5ec90ef5-afe7-4f28-8530-cc1b410a8f91"/>
+				<imageExpression><![CDATA["src/main/resources/room23_1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="90" y="40" width="350" height="40" forecolor="#030303" backcolor="#FFFFFF" uuid="85cfdb1a-f9ed-4f6a-9bc0-a5308ee0621f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cafetería ROOM23]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="60" width="86" height="20" forecolor="#045AD1" uuid="85cacecd-97d5-409e-8063-578f2926e8eb"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid" lineColor="#0369AD"/>
+					<topPen lineWidth="2.0" lineStyle="Solid" lineColor="#0369AD"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#0369AD"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#0369AD"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#0369AD"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PEDIDOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="6" width="70" height="20" backcolor="#D9EBFF" uuid="fb1996ac-27be-4475-a807-16e9e97d766d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e53e6bff-be90-4702-aeef-65bd37b76323"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#0453BA"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<text><![CDATA[ID PEDIDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="90" y="6" width="70" height="20" backcolor="#D9EBFF" uuid="f9a206a7-169b-4443-a47d-04e1107616ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="304f0c88-2485-4f89-96c3-30b6eca8e91f"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#0453BA"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<text><![CDATA[ID PRODUCTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="6" width="70" height="20" backcolor="#D9EBFF" uuid="9e259448-6cab-4a3c-abe6-da3bf037a01f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="364341da-72c7-4d43-851f-857fde284d99"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#0453BA"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<text><![CDATA[PRECIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="270" y="6" width="120" height="20" backcolor="#D9EBFF" uuid="9ddc99fd-05dd-46ec-b116-95dce54f8495">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a88dc597-612d-4bf9-981d-52d1f27ea08a"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#0453BA"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<text><![CDATA[ESTADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="6" width="134" height="20" backcolor="#D9EBFF" uuid="965921e9-5ad9-4db1-8557-ecb2d7ef9073">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="817b1b49-1c95-4a82-b827-3ffa3bf7b6ad"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#0453BA"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0453BA"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<text><![CDATA[FECHA ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="551" height="1" uuid="a79ac042-e442-47c1-ac76-92f925189c32">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="5" width="70" height="14" uuid="b7ff26db-7a0c-4a1f-aac0-12c20313cfe4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e53e6bff-be90-4702-aeef-65bd37b76323"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idPedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="5" width="70" height="14" uuid="9bf7464c-cece-4d81-a79c-ebcd94c9e1ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="304f0c88-2485-4f89-96c3-30b6eca8e91f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{productos_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="5" width="70" height="14" uuid="4f4fb2d1-fb93-4fd7-a775-4e47215d4d38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="364341da-72c7-4d43-851f-857fde284d99"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{precioPedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="5" width="120" height="14" uuid="86b1bb2d-2eba-42c8-b358-a2bcde23e097">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a88dc597-612d-4bf9-981d-52d1f27ea08a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estadoPedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="5" width="134" height="14" uuid="1482065c-6441-4115-9734-6a20225832d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="817b1b49-1c95-4a82-b827-3ffa3bf7b6ad"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Trebuchet MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaPedido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

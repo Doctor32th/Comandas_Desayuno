@@ -1,0 +1,9 @@
+models\Pedido.class
+com\mycompany\dc_cafeteria_hibfx\PrimaryController.class
+com\mycompany\dc_cafeteria_hibfx\SecondaryController.class
+module-info.class
+com\mycompany\dc_cafeteria_hibfx\HibernateUtil.class
+com\mycompany\dc_cafeteria_hibfx\JasperConnection.class
+com\mycompany\dc_cafeteria_hibfx\SessionData.class
+com\mycompany\dc_cafeteria_hibfx\App.class
+models\Producto.class
